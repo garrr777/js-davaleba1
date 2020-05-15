@@ -42,5 +42,7 @@ cars.push(car4);
 for(i = 0; i < cars.length; i++){
     if(cars[i].price < 15000){
         console.log(cars[i]);
+    }else{
+        console.log(`we don't have such car`);
     }
 }
