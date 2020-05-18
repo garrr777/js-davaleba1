@@ -38,11 +38,16 @@ cars.push(car2);
 cars.push(car3);
 cars.push(car4);
 
+let carFound = false;
 
 for(i = 0; i < cars.length; i++){
     if(cars[i].price < 15000){
-        console.log(cars[i]);
-    }else{
-        console.log(`we don't have such car`);
+        carFound = true;      
     }
+}
+if(carFound){
+    console.log("yes,we have such car");
+}
+else{
+    console.log("Unfortunately ..... ");
 }
