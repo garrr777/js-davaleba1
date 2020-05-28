@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson4</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row d-flex justify-content-center mt-5">
+            <input type="text" class="mr-3" id="priceInput">
+            <button id="ChoosePrice" class="mr-3 btn btn-primary" onclick="showButton()">choose car price</button>
+            <button id="averagePrice" class="mr-3 btn btn-primary" onclick="showAveragePrice(cars)">average price</button>
+            <button id="min" class="mr-3 btn btn-primary" onclick="disableExpensiveCars()">min price</button>
+            <button id="max" class="mr-3 btn btn-primary" onclick="showMaxPrice(arrPrice)">max price</button>
+        </div>
+        <div class="row mt-5">
+            <div class="col-3">
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2021-audi-a3-101-1587149395.jpg?crop=0.704xw:0.627xh;0.0545xw,0.319xh&resize=1200:*" onclick="displayDescription(this.id)" id="audi" class="w-100" alt="audi">  
+                <a href="#" class="btn btn-primary w-100" id="audiButton" onclick="callAudi()">get info</a>
+            </div>
+            <div class="col-3">             
+                <img src="https://www.bmw-m.com/content/dam/bmw/marketBMW_M/common/topics/magazine-article-pool/2019/m-portaits-6/bmw-m4-coupe-yas-marina-blue-nick.f82m-ai-04.jpg" onclick="displayDescription(this.id)" id="bmw" class="w-100" alt="bmw">
+                <a href="#" class="btn btn-primary w-100" id="bmwButton">get info</a>
+            </div>
+            <div class="col-3">        
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2020-lexus-rc-mmp-1-1570477385.jpg" onclick="displayDescription(this.id)" id="lexus" class="w-100" alt="audi">              
+                <a href="#" class="btn btn-primary w-100" id="lexusButton">get info</a>  
+            </div>
+            <div class="col-3">
+                <img src="https://www.motortrend.com/uploads/sites/10/2019/11/2020-Volkswagen-Atlas-Cross-Sport-front-side-motion-view.jpg?fit=around%7C875:492.1875" onclick="displayDescription(this.id)" id="wolksvagen" class="w-100" alt="audi">
+                <a href="#" class="btn btn-primary w-100" id="volkswagenButton">get info</a>
+            </div>
+        </div><!--row-->
+    </div><!--container-->
+    <script src="davaleba4.js"></script>
+</body>
+</html>
